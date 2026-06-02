@@ -3,259 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sai Baba Kancherla | Data Science & AI Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<title>Sai Baba Kancherla | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0b1120;
-color:white;
-overflow-x:hidden;
-}
-
-nav{
-position:fixed;
-width:100%;
-top:0;
-background:rgba(15,23,42,.85);
-backdrop-filter:blur(12px);
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:1000;
-}
-
-.logo{
-font-size:1.4rem;
-font-weight:700;
-color:#60a5fa;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-nav a{
-text-decoration:none;
-color:white;
-transition:.3s;
-}
-
-nav a:hover{
-color:#60a5fa;
-}
-
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:120px 8%;
-gap:80px;
-}
-
-.hero-content{
-flex:1;
-}
-
-.hero-content h1{
-font-size:4rem;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.hero-content span{
-color:#60a5fa;
-}
-
-.hero-content p{
-font-size:1.1rem;
-color:#cbd5e1;
-margin-bottom:30px;
-max-width:700px;
-}
-
-.btns{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:14px 28px;
-border-radius:12px;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-}
-
-.primary{
-background:#2563eb;
-color:white;
-}
-
-.primary:hover{
-transform:translateY(-4px);
-}
-
-.secondary{
-border:1px solid #60a5fa;
-color:#60a5fa;
-}
-
-.secondary:hover{
-background:#60a5fa;
-color:black;
-}
-
-.hero-image{
-flex:1;
-display:flex;
-justify-content:center;
-}
-
-.hero-image img{
-width:420px;
-height:420px;
-object-fit:cover;
-border-radius:50%;
-border:6px solid #2563eb;
-box-shadow:0 0 60px rgba(37,99,235,.5);
-}
-
-.section{
-padding:100px 8%;
-}
-
-.section-title{
-font-size:2.5rem;
-margin-bottom:50px;
-color:#60a5fa;
-text-align:center;
-}
-
-.glass{
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,.1);
-border-radius:20px;
-padding:30px;
-}
-
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.skill-card{
-padding:25px;
-background:#111827;
-border-radius:18px;
-transition:.3s;
-}
-
-.skill-card:hover{
-transform:translateY(-8px);
-}
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:25px;
-}
-
-.project-card{
-background:#111827;
-padding:25px;
-border-radius:20px;
-transition:.3s;
-}
-
-.project-card:hover{
-transform:translateY(-10px);
-}
-
-footer{
-text-align:center;
-padding:40px;
-color:#94a3b8;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;scroll-behavior:smooth}
+body{background:#050b1a;color:#fff}
+nav{position:fixed;top:0;width:100%;padding:20px 7%;display:flex;justify-content:space-between;background:rgba(5,11,26,.9);backdrop-filter:blur(10px);z-index:999}
+nav a{color:#fff;text-decoration:none;margin-left:25px}
+.logo{font-weight:800;color:#60a5fa;font-size:28px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;padding:120px 7% 50px;gap:50px}
+.hero h1{font-size:72px;line-height:1.05}
+.hero span{color:#60a5fa}
+.hero p{margin:20px 0;color:#cbd5e1;font-size:22px}
+.btn{display:inline-block;padding:14px 24px;border-radius:12px;text-decoration:none;margin-right:10px;font-weight:600}
+.primary{background:#2563eb;color:#fff}
+.secondary{border:1px solid #60a5fa;color:#60a5fa}
+.hero img{width:520px;height:520px;border-radius:50%;object-fit:cover;border:6px solid #2563eb;box-shadow:0 0 70px rgba(37,99,235,.5)}
+section{padding:90px 7%}
+h2{font-size:42px;color:#60a5fa;margin-bottom:30px}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:30px;border-radius:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.skill,.project{background:#101827;padding:25px;border-radius:18px}
+.timeline-item{margin-bottom:25px;padding-left:20px;border-left:3px solid #2563eb}
+footer{text-align:center;padding:40px;color:#94a3b8}
 @media(max-width:900px){
-
-.hero{
-flex-direction:column-reverse;
-text-align:center;
-}
-
-.hero-content h1{
-font-size:2.8rem;
-}
-
-.hero-image img{
-width:280px;
-height:280px;
-}
+.hero{flex-direction:column-reverse;text-align:center}
+.hero h1{font-size:48px}
+.hero img{width:320px;height:320px}
 }
 </style>
 </head>
-
 <body>
-
 <nav>
 <div class="logo">Sai Baba Kancherla</div>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
 
 <section class="hero">
-
-<div class="hero-content">
-<h1>Hi, I'm <span>Sai Baba Kancherla</span></h1>
-
-<p>
-M.Sc. Applied Data Science & Artificial Intelligence Student |
-Data Analytics | Business Intelligence | AI & Machine Learning
-
-<br><br>
-📍 Nürnberg, Germany | 🇩🇪 German A2
-</p>
-
-<div class="btns">
-<a href="Sai_Baba_Kancherla_CV.pdf" class="btn primary" target="_blank">Download CV</a>
-
-<a href="https://www.linkedin.com/in/sai-baba-kancherla" class="btn secondary" target="_blank">LinkedIn</a>
-
-<a href="https://github.com/SBK250" class="btn secondary" target="_blank">GitHub</a>
+<div>
+<h1>Hi, I'm <span>Sai Baba</span><br>Kancherla</h1>
+<p>M.Sc. Applied Data Science & Artificial Intelligence Student<br>Data Analytics | Business Intelligence | AI & Machine Learning</p>
+<p>📍 Nürnberg, Germany | 🇩🇪 German A2</p>
+<a class="btn primary" href="Sai_Baba_Kancherla_CV.pdf">Download CV</a>
+<a class="btn secondary" href="https://www.linkedin.com/in/sai-baba-kancherla">LinkedIn</a>
+<a class="btn secondary" href="https://github.com/SBK250">GitHub</a>
 </div>
-
+<div>
+<img src="profile.jpeg" alt="Profile">
 </div>
-
-<div class="hero-image">
-<img src="profile.jpeg" alt="Sai Baba Kancherla">
-</div>
-
 </section>
 
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+Aspiring Data Analyst and AI Professional with 2.5+ years of experience in Revenue Cycle Management, reporting, workflow optimization, and data processing. Currently pursuing a pathway toward Applied Data Science & Artificial Intelligence and actively seeking Werkstudent, Internship, and Entry-Level opportunities in Germany.
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="skill"><h3>Programming</h3><p>Python, SQL, Java</p></div>
+<div class="skill"><h3>Analytics</h3><p>Power BI, Tableau, Excel</p></div>
+<div class="skill"><h3>Data Science</h3><p>Pandas, NumPy, Machine Learning</p></div>
+<div class="skill"><h3>Tools</h3><p>Git, GitHub, Jupyter, VS Code</p></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<div class="timeline-item"><h3>Eclat Health Solutions</h3><p>Senior Executive – Revenue Cycle Management (2025)</p></div>
+<div class="timeline-item"><h3>ACN Healthcare</h3><p>Senior Executive – Revenue Cycle Management (2024–2025)</p></div>
+<div class="timeline-item"><h3>Ascent Business Solutions</h3><p>Associate – Revenue Cycle Management (2023–2024)</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Featured Projects</h2>
+<div class="grid">
+<div class="project"><h3>CMS National Hospital Performance Audit</h3><p>Healthcare analytics, data cleaning, EDA and visualization using Python.</p></div>
+<div class="project"><h3>Customer Churn Analysis</h3><p>Customer retention insights and churn analytics using Python.</p></div>
+<div class="project"><h3>Sales Analytics Dashboard</h3><p>Power BI and SQL dashboard for business reporting.</p></div>
+<div class="project"><h3>Statistical Analysis using JASP</h3><p>T-Test, ANOVA and hypothesis testing.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>📧 saibabakancherla@gmail.com</p><br>
+<p>📍 Nürnberg, Germany</p><br>
+<p>LinkedIn: linkedin.com/in/sai-baba-kancherla</p><br>
+<p>GitHub: github.com/SBK250</p>
+</div>
+</section>
+
+<footer>© 2026 Sai Baba Kancherla • Portfolio</footer>
 </body>
 </html>
