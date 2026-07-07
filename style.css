@@ -942,3 +942,104 @@ margin:35px auto;
     transform:translateY(-8px);
     border-color:#3B82F6;
 }
+/* ===========================
+INDUSTRY EVENTS
+=========================== */
+
+.events{
+
+padding:120px 10%;
+
+}
+
+.event-card{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+padding:40px;
+
+border-radius:24px;
+
+border:1px solid rgba(255,255,255,.1);
+
+}
+
+.event-image img{
+
+width:100%;
+
+border-radius:18px;
+
+}
+
+.event-badge{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#3B82F6;
+
+border-radius:25px;
+
+margin-bottom:20px;
+
+font-size:14px;
+
+}
+
+.event-content h3{
+
+font-size:36px;
+
+margin-bottom:10px;
+
+}
+
+.event-content h4{
+
+color:#00F5D4;
+
+margin-bottom:20px;
+
+}
+
+.event-content p{
+
+color:#d5d5d5;
+
+line-height:1.8;
+
+margin-bottom:25px;
+
+}
+
+.event-tags{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:12px;
+
+}
+
+.event-tags span{
+
+background:rgba(255,255,255,.08);
+
+padding:10px 16px;
+
+border-radius:25px;
+
+}
