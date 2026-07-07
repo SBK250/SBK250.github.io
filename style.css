@@ -1436,3 +1436,11 @@ transform:translateY(0px);
 }
 
 }
+.nav-actions{
+display:flex;
+align-items:center;
+gap:15px;
+}
+.icon-btn{
+...
+}
