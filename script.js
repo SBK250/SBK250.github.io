@@ -43,3 +43,20 @@ observer.unobserve(counter);
 });
 
 counters.forEach(counter=>observer.observe(counter));
+
+const words = [
+    "Applied Data Scientist",
+    "AI Engineer",
+    "Business Intelligence Analyst",
+    "Healthcare Analytics Professional"
+];
+
+let index = 0;
+
+setInterval(() => {
+
+    document.getElementById("typing-text").textContent = words[index];
+
+    index = (index + 1) % words.length;
+
+}, 2200);
