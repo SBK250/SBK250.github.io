@@ -88,3 +88,8 @@ const progress=(scrollTop/scrollHeight)*100;
 document.getElementById("progress-bar").style.width=progress+"%";
 
 });
+AOS.init({
+    duration: 1000,
+    once: true,
+    easing: "ease-in-out"
+});
