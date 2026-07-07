@@ -1441,3 +1441,9 @@ transform:translateY(0px);
     margin-bottom:10px;
     color:#d6d6d6;
 }
+.education-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+    gap:35px;
+    margin-top:50px;
+}
