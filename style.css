@@ -423,6 +423,63 @@ flex-direction:column;
 align-items:center;
 
 }
+
+}
+
+@media(max-width:900px){
+
+.nav-links{
+display:none;
+}
+
+.container{
+flex-direction:column;
+text-align:center;
+}
+
+.about-image img{
+width:260px;
+}
+
+.hero h1{
+font-size:44px;
+}
+
+.hero h2{
+font-size:25px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+}   /* <-- Media query ends here */
+
+
+/* ===========================
+SKILLS
+=========================== */
+
+.skills{
+
+    padding:120px 10%;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+/* ...rest of your Skills CSS... */
    /* ===========================
 SKILLS
 =========================== */
