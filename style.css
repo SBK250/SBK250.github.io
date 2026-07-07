@@ -1279,3 +1279,20 @@ line-height:2;
 margin-bottom:30px;
 
 }
+#progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0%;
+
+background:linear-gradient(90deg,#00F5D4,#3B82F6,#8B5CF6);
+
+z-index:99999;
+
+}
