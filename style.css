@@ -1377,6 +1377,9 @@ transform:translateY(-70px);
 transform:translateY(0px);
 
 }
+/* ==========================================
+   EDUCATION SECTION STYLES
+   ========================================== */
 
    <style>
 .education-grid {
@@ -1407,9 +1410,6 @@ transform:translateY(0px);
 
 <section id="education" class="education" data-aos="fade-up">
 ...
-/* ==========================================
-   EDUCATION SECTION STYLES
-   ========================================== */
 
 .education {
     padding: 60px 20px;
