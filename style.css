@@ -800,3 +800,61 @@ PROJECTS
     font-weight:600;
 
 }
+
+/* ===========================
+STATS
+=========================== */
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+padding:40px 10% 120px;
+
+}
+
+.stat-card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:20px;
+
+padding:40px;
+
+text-align:center;
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.1);
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(59,130,246,.25);
+
+}
+
+.stat-card h2{
+
+font-size:48px;
+
+color:#00F5D4;
+
+margin-bottom:15px;
+
+}
+
+.stat-card p{
+
+color:#ccc;
+
+}
