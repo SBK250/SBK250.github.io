@@ -1149,6 +1149,154 @@ color:#bdbdbd;
 line-height:1.8;
 
 }
+/* ==========================================
+   EDUCATION SECTION STYLES
+   ========================================== */
+
+   <style>
+.education-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+    gap: 30px !important;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+}
+
+.education-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    padding: 25px !important;
+    text-align: left !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.education-card h3 { color: #fff; margin-bottom: 5px; font-size: 1.3rem; }
+.education-card h4 { color: #4299e1; margin-bottom: 5px; font-size: 1.1rem; }
+.education-card h5 { color: #ccc; margin-bottom: 10px; font-size: 1rem; }
+.education-card .duration { color: #90cdf4; font-weight: bold; margin-bottom: 15px; display: inline-block; }
+.education-card ul { padding-left: 20px; color: #a0aec0; }
+.education-card ul li { margin-bottom: 5px; }
+</style>
+
+<section id="education" class="education" data-aos="fade-up">
+...
+
+.education {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: #a0aec0;
+    margin-bottom: 40px;
+}
+
+/* Responsive Grid Layout */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Glassmorphism / Styled Card Container */
+.education-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Accent Effect */
+.education-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(66, 153, 225, 0.4);
+    box-shadow: 0 10px 25px rgba(66, 153, 225, 0.15);
+}
+
+.education-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.education-card h3 {
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.education-card h4 {
+    font-size: 1.1rem;
+    color: #4299e1; /* Accent blue color */
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.education-card h5 {
+    font-size: 1rem;
+    color: #cbd5e0;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.education-card .duration {
+    display: inline-block;
+    font-size: 0.9rem;
+    background: rgba(66, 153, 225, 0.15);
+    color: #90cdf4;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Subject Course List Styling */
+.education-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-card ul li {
+    font-size: 0.95rem;
+    color: #a0aec0;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+/* Adds a small custom dot before list items */
+.education-card ul li::before {
+    content: "•";
+    color: #4299e1;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: 2px;
+}
+
+.education-card ul li:last-child {
+    border-bottom: none;
+}
+
+
 /* ===========================
 CONTACT
 =========================== */
@@ -1376,150 +1524,4 @@ transform:translateY(-70px);
 
 transform:translateY(0px);
 
-}
-/* ==========================================
-   EDUCATION SECTION STYLES
-   ========================================== */
-
-   <style>
-.education-grid {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
-    gap: 30px !important;
-    max-width: 1200px;
-    margin: 40px auto 0 auto;
-    padding: 0 20px;
-}
-
-.education-card {
-    background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    border-radius: 12px !important;
-    padding: 25px !important;
-    text-align: left !important;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-.education-card h3 { color: #fff; margin-bottom: 5px; font-size: 1.3rem; }
-.education-card h4 { color: #4299e1; margin-bottom: 5px; font-size: 1.1rem; }
-.education-card h5 { color: #ccc; margin-bottom: 10px; font-size: 1rem; }
-.education-card .duration { color: #90cdf4; font-weight: bold; margin-bottom: 15px; display: inline-block; }
-.education-card ul { padding-left: 20px; color: #a0aec0; }
-.education-card ul li { margin-bottom: 5px; }
-</style>
-
-<section id="education" class="education" data-aos="fade-up">
-...
-
-.education {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.section-title h2 {
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.section-title p {
-    font-size: 1.1rem;
-    color: #a0aec0;
-    margin-bottom: 40px;
-}
-
-/* Responsive Grid Layout */
-.education-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    justify-content: center;
-    align-items: start;
-}
-
-/* Glassmorphism / Styled Card Container */
-.education-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: left;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Card Hover Accent Effect */
-.education-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(66, 153, 225, 0.4);
-    box-shadow: 0 10px 25px rgba(66, 153, 225, 0.15);
-}
-
-.education-icon {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.education-card h3 {
-    font-size: 1.35rem;
-    color: #ffffff;
-    margin-bottom: 8px;
-    line-height: 1.4;
-}
-
-.education-card h4 {
-    font-size: 1.1rem;
-    color: #4299e1; /* Accent blue color */
-    margin-bottom: 6px;
-    font-weight: 500;
-}
-
-.education-card h5 {
-    font-size: 1rem;
-    color: #cbd5e0;
-    margin-bottom: 12px;
-    font-weight: 400;
-}
-
-.education-card .duration {
-    display: inline-block;
-    font-size: 0.9rem;
-    background: rgba(66, 153, 225, 0.15);
-    color: #90cdf4;
-    padding: 4px 12px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-/* Subject Course List Styling */
-.education-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.education-card ul li {
-    font-size: 0.95rem;
-    color: #a0aec0;
-    padding: 6px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    display: flex;
-    align-items: center;
-}
-
-/* Adds a small custom dot before list items */
-.education-card ul li::before {
-    content: "•";
-    color: #4299e1;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: 2px;
-}
-
-.education-card ul li:last-child {
-    border-bottom: none;
 }
