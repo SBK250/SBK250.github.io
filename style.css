@@ -755,38 +755,17 @@ PROJECTS
     font-weight:600;
 
 }
+.project-card{
 
-/* ===========================
-PROJECT HIGHLIGHTS
-=========================== */
+    background:rgba(255,255,255,.08);
 
-.project-highlights{
+    border-radius:20px;
 
-display:flex;
+    overflow:hidden;
 
-flex-wrap:wrap;
+    display:flex;
 
-gap:10px;
-
-margin:18px 0;
-
-}
-
-.project-highlights span{
-
-background:rgba(59,130,246,.15);
-
-border:1px solid rgba(59,130,246,.35);
-
-padding:8px 14px;
-
-border-radius:30px;
-
-font-size:14px;
-
-font-weight:500;
-
-color:#ffffff;
+    flex-direction:column;
 
 }
 
